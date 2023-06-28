@@ -11,6 +11,7 @@ cap.set(4,720)
 
 
 while True:
+    # this will start reading the webcam and write it to the variable img , success
     success, img = cap.read()
     cv2.imshow("Cam feed", img)
     cv2.waitKey(1)
