@@ -1,6 +1,5 @@
 import cv2
-
-
+import face_recognition
 
 # start capturing video footage from the webcam
 cap = cv2.VideoCapture(0)
@@ -15,3 +14,6 @@ while True:
     success, img = cap.read()
     cv2.imshow("Cam feed", img)
     cv2.waitKey(1)
+
+
+
