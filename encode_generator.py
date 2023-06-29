@@ -29,6 +29,7 @@ def createEncoding(images_list):
 
     return encodings_list
 
+
 # passing the list which contain the images in order to record
 known_encode_list = createEncoding(images)
 print("Encoding complete!")
@@ -39,4 +40,3 @@ file = open("Encode_file.p", "wb")
 pickle.dump(known_encode_list_with_id, file)
 file.close()
 print("File has been saved!")
-
